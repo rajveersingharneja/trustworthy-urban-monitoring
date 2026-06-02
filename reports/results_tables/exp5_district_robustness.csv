@@ -1,0 +1,25 @@
+district,category,action,confidence,activity_ratio,z_score,trend
+Bronx,housing,WAIT,LOW,0.0,-1.7155662918882948,falling
+Bronx,infrastructure,WAIT,LOW,0.0,-0.4674263524428028,falling
+Bronx,noise,WAIT,LOW,1.013793103448276,0.022475293458202615,falling
+Bronx,parking,WAIT,LOW,0.711864406779661,-1.00970685340233,falling
+Brooklyn,housing,WAIT,LOW,0.0,-2.0467021148761066,falling
+Brooklyn,infrastructure,WAIT,LOW,0.0,-0.7687061147858074,falling
+Brooklyn,noise,WAIT,LOW,0.9974554707379134,-0.0030345135874147995,stable
+Brooklyn,parking,WAIT,LOW,0.8312499999999999,-0.5318633603768889,stable
+Manhattan,housing,WAIT,LOW,0.0,-1.8044003294690951,falling
+Manhattan,infrastructure,WAIT,LOW,0.0,-0.4309458036856673,falling
+Manhattan,noise,WAIT,LOW,1.1428571428571428,0.2237100723907326,stable
+Manhattan,parking,WAIT,LOW,0.16666666666666666,-2.095684110712273,stable
+Queens,housing,WAIT,LOW,0.0,-1.3262680865060852,falling
+Queens,infrastructure,WAIT,LOW,0.0,-0.5714285714285714,falling
+Queens,noise,DEFER,MEDIUM,2.4324324324324325,1.5803167961866604,stable
+Queens,parking,WAIT,LOW,0.3765281173594132,-2.1347955493092368,falling
+Staten Island,housing,WAIT,LOW,0.0,-0.5119997591413665,rising
+Staten Island,infrastructure,WAIT,LOW,0.0,-0.47942091424209876,falling
+Staten Island,noise,DEFER,MEDIUM,1.8666666666666667,0.6958314448749581,rising
+Staten Island,parking,WAIT,LOW,0.7777777777777777,-0.36751181622491425,stable
+Unspecified,housing,WAIT,LOW,0.0,0.0,stable
+Unspecified,infrastructure,WAIT,LOW,0.0,0.0,stable
+Unspecified,noise,WAIT,LOW,1.0,2.0,rising
+Unspecified,parking,WAIT,LOW,0.0,0.0,stable

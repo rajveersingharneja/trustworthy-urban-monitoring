@@ -1,0 +1,16 @@
+{
+  "cities": ["nyc", "boston"],
+  "days_back": 45,
+  "freq": "h",
+  "decision": {
+    "act_ratio_threshold": 1.75,
+    "defer_ratio_threshold": 1.30,
+    "z_score_threshold": 2.0,
+    "required_confirmations": 3,
+    "cooldown_hours": 12,
+    "high_confidence_threshold": 0.70,
+    "medium_confidence_threshold": 0.40
+  },
+  "baseline_window_days": 14,
+  "categories": ["noise", "housing", "sanitation", "parking", "infrastructure"]
+}

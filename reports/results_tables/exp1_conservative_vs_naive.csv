@@ -1,0 +1,4 @@
+policy,n_ACT,n_WAIT,n_DEFER,act_rate,false_alert_est,act_threshold,confirmations,cooldown_h
+naive,159,632,103,0.178,0.692,1.2,1,0
+default,4,632,258,0.004,0.75,1.75,3,12
+conservative,0,632,262,0.0,0.0,2.2,5,24
