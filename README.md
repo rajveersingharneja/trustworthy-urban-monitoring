@@ -209,42 +209,27 @@ The naive system triggers 98% more alerts for the same underlying conditions. Th
 | `time_window_comparison.png` | Hourly vs daily aggregation effects |
 
 ---
+## Future Work
 
-## Reproducibility
+Potential extensions include:
 
-Set `--no-live` to bypass all network calls. The synthetic generator uses a fixed seed (42) and is deterministic. Re-running without any live data produces identical results.
-
-```bash
-# Fully clean reproducible run
-rm -rf reports/figures/* reports/results_tables/* experiments/outputs/*
-python main.py --no-live --stride 6
-```
-
----
-
-## Design Decisions
-
-**Why rule-driven instead of ML?**  
-For a system making civic intervention decisions, explainability matters more than marginal accuracy gains. A random forest can't tell you *why* it triggered — the rule engine can. ML components (anomaly detection, clustering) are appropriate for signal enrichment, not for the final decision gate.
-
-**Why conservative by default?**  
-Alert fatigue is a real operational problem. A system that cries wolf 18% of the time (naive policy) gets ignored. A system that alerts 0.4% of the time with HIGH confidence gets taken seriously.
-
-**Why z-score *and* activity ratio?**  
-Activity ratio alone doesn't account for baseline variability. A 2x spike from a noisy baseline means something different from a 2x spike from a stable one. Z-score captures the surprise relative to local variance.
+- Conformal prediction for uncertainty estimation
+- Weather-aware complaint modeling
+- Spatial anomaly detection
+- Cross-category dependency analysis
+- Adaptive threshold calibration
+- Real-time monitoring dashboard
 
 ---
 
-## Potential Extensions
+## Author
 
-- **Conformal prediction** for distribution-free confidence intervals on activity ratio estimates
-- **Online threshold calibration** — adjust τ based on recent false-alert feedback
-- **Cross-category correlation** — simultaneous spikes in noise + sanitation often indicate events
-- **Weather integration** — temperature and precipitation correlate with complaint rates
-- **Spatial signal analysis** — use lat/lon to detect geographically concentrated anomalies
+Rajveer Arneja
+
+Independent research project exploring reliable decision-making under uncertainty using live urban activity data.
 
 ---
 
 ## License
 
-MIT
+MIT License
